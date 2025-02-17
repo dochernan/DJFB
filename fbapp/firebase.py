@@ -5,8 +5,8 @@ from firebase_admin import credentials, db
 import os
 
 # Path to the serviceAccountKey.json file
-current_directory = os.path.dirname(os.path.abspath(__file__))
-json_path = os.path.join(current_directory, 'gothic-context-831-firebase-adminsdk-fbsvc-a78a426122.json')
+#current_directory = os.path.dirname(os.path.abspath(__file__))
+#json_path = os.path.join(current_directory, 'gothic-context-831-firebase-adminsdk-fbsvc-a78a426122.json')
 
 import json
 import base64
@@ -29,10 +29,10 @@ if not firebase_admin._apps:
 
 
 # Initialize the Firebase Admin SDK
-cred = credentials.Certificate(json_path)
-firebase_admin.initialize_app(cred, {
-    'databaseURL': 'https://gothic-context-831-default-rtdb.asia-southeast1.firebasedatabase.app/'  # Replace with your Firebase database URL
-})
+# cred = credentials.Certificate(json_path)
+# firebase_admin.initialize_app(cred, {
+#     'databaseURL': 'https://gothic-context-831-default-rtdb.asia-southeast1.firebasedatabase.app/'  # Replace with your Firebase database URL
+# })
 
 
 
